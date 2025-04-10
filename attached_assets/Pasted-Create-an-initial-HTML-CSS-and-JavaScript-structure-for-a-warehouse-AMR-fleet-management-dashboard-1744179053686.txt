@@ -1,0 +1,32 @@
+Create an initial HTML, CSS, and JavaScript structure for a warehouse AMR fleet management dashboard based on the Delphnoid system (AMRs with swappable tools, AI copilot).
+
+**Core Goal:** Design an extremely intuitive and visually simple dashboard. It must be understandable at a glance by non-technical warehouse managers, aiming for the clarity a 7-year-old could grasp the basics. Prioritize graphics, icons, and color-coding over dense text/tables.
+
+**Key Delphnoid Features to Reflect:** Swappable tools on AMRs, reduced idle time benefit.
+
+**Layout (Use CSS Grid or Flexbox):**
+1.  **Header:** Simple title "Delphnoid Fleet Dashboard". Optionally include a small text area for "AI Focus: [Placeholder Text]".
+2.  **Main Content Area:**
+    * **Widget 1: Fleet Status Overview:** Display counts for 'Active', 'Idle', 'Charging', 'Down' AMRs using colored cards/sections with icons. For 'Active', indicate potential breakdown by task/tool type using smaller nested icons (e.g., pallet, tote, scanner icons within the green 'Active' area).
+    * **Widget 2: Tool Pool Status:** Show simple icons for each tool type (e.g., Pallet Tool, Tote Tool, Scanner Tool). Next to each, display placeholder numbers for "In Use: [X]" and "Available: [Y]".
+    * **Widget 3: Critical Alerts:** Prominent section (e.g., top right corner or banner) showing a large number for the count of active alerts, using a warning icon. Make it visually distinct (e.g., red border/background if count > 0).
+    * **Widget 4: Efficiency Snapshot:** Display a simple gauge/progress bar for "Overall Fleet Busy %". Include a clear text indicator nearby: "Idle Time Reduced by: ~50%".
+    * **Main Area: Live Warehouse Map:** A large placeholder `div`. Add a note that this area will show a simplified map. Include a few placeholder icons inside this div using Font Awesome or simple shapes:
+        * These icons should represent *different tools* (e.g., fa-pallet, fa-box, fa-search).
+        * Use CSS classes to give these icons different *status colors* (green, yellow, blue, red).
+
+**Styling (CSS):**
+* Clean, bright, uncluttered theme.
+* Consistent, distinct colors for status: Green (Active), Yellow (Idle), Blue (Charging), Red (Down/Alert).
+* Large, readable fonts.
+* Use simple, clear icons (Font Awesome recommended for placeholders) for AMR status, tools, and alerts. Ensure tool icons are visually distinct.
+
+**Interactivity (JavaScript - Basic Placeholders):**
+* Make the placeholder AMR icons on the "map" clickable. On click, console log mock details: "AMR ID: [AMR-01], Status: [Active], Equipped Tool: [Pallet Tool], Battery: [75%]".
+* Make the 'Fleet Status Overview' categories clickable. Log "Filter by: [Status]" to console.
+* Make the 'Tool Pool' icons/categories clickable. Log "Filter by Tool: [Tool Type]" to console.
+* Make the 'Critical Alerts' area clickable. Log "Show Alert Details" to console.
+
+**Data:** Use static placeholder data in JS or HTML for initial display. No backend needed yet.
+
+Generate the initial `index.html`, `style.css`, and `script.js` files meeting these requirements.
